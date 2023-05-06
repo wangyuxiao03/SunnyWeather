@@ -8,8 +8,8 @@
 
     <fragment
         android:id="@+id/placeFragment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:name="com.example.sunnyweather.android.ui.place.PlaceFragment"
         />
 

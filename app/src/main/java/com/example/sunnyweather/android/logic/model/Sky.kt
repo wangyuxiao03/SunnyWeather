@@ -5,15 +5,17 @@ import com.example.sunnyweather.R
 class Sky(val info:String,val icon:Int,val bg:Int)
 
 private val sky= mapOf(
-    "CLEAR_DAy" to Sky("晴", R.drawable.ic_clear_day,R.drawable.bg_clear_day),
+    "CLEAR_DAY" to Sky("晴", R.drawable.ic_clear_day,R.drawable.bg_clear_day),
 
     "CLEAR_NIGHT" to Sky("晴",R.drawable.ic_clear_night,R.drawable.bg_clear_night),
 
     "PARTLY_CLOUDY_DAY" to Sky("多云",R.drawable.ic_partly_cloud_day,
     R.drawable.bg_partly_cloudy_day),
 
-    "PARTLY_NIGHT_DAY" to Sky("多云",R.drawable.ic_partly_cloud_night,
-    R.drawable.ic_partly_cloud_night),
+    "PARTLY_CLOUDY_NIGHT" to Sky("多云",R.drawable.ic_partly_cloud_night,R.drawable.bg_partly_cloudy_night),
+
+//    "PARTLY_NIGHT_DAY" to Sky("多云",R.drawable.ic_partly_cloud_night,
+//    R.drawable.ic_partly_cloud_night),
 
     "CLOUDY" to Sky("阴",R.drawable.ic_cloudy,R.drawable.bg_cloudy),
 
