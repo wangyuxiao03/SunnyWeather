@@ -6,6 +6,7 @@ import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
 
+//接口类
 interface PlaceService {
 
     @GET("v2/place?token=${SunnyWeatherApplication.TOKEN}&lang=zh_CN")

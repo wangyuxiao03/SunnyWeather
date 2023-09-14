@@ -18,6 +18,7 @@ import kotlinx.android.synthetic.main.fragment_place.*
 
 class PlaceFragment:Fragment() {
 
+    //通过ViewModelProvider获取单一实例对象
     val viewModel by lazy { ViewModelProviders.of(this).get(PlaceViewModel::class.java) }
 
     private lateinit var adapter: PlaceAdapter

@@ -9,12 +9,15 @@ import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 import kotlin.coroutines.suspendCoroutine
 
+
+//调用单例类中的方法可以直接使用：Singleton.singletonTest()
 object SunnyWeatherNetwork {
 
     private val placeService = ServiceCreator.create(PlaceService::class.java)
 
     private val weatherService=ServiceCreator.create(WeatherService::class.java)
 
+    //使用了suspend 后 就会切换出来一个协程去执行操作。而不是在当前的线程当中 ，suspend 是暂时切走。等执行完毕后再切回来。
     suspend fun searchPlaces(query: String) = placeService.searchPlaces(query).await()
 
     suspend fun getDailyWeather(lng:String,lat:String)= weatherService.getDailyWeather(lng,lat).await()

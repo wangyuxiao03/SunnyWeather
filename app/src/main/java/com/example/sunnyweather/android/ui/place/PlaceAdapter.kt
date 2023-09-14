@@ -15,6 +15,7 @@ class PlaceAdapter(private val fragment: PlaceFragment, private val placeList: L
     RecyclerView.Adapter<PlaceAdapter.ViewHolder>() {
 
 
+       //内部类会带有一个外部类的对象的引用，内部类会带有一个对外部类的对象的引用，所以内部类可以访问外部类成员属性和成员函数
         inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
             val placeName: TextView =view.findViewById(R.id.placeName)
             val placeAddress:TextView=view.findViewById(R.id.placeAddress)
